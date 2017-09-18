@@ -3,5 +3,10 @@ body {
 }
 
 #jumbotron {
-	background-color: #74107B;
+	background-color: #BE0100;
+}
+
+#title {
+	color: white;
+	font-family: 'Catamaran', sans-serif;
 }
