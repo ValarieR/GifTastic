@@ -64,7 +64,18 @@ $(document).ready(function() {
                                         newGif.addClass("newGifs");
                                         newGif.attr("src", response.data[j].images.fixed_width_still.url);
                                         newGif.attr('class', "img-thumbnail");
-                                        $("#imageHolder").append(newGif);
+                                        newGif.addClass("static");
+                                        newGif.addClass("img-responsive");
+                                        //$("#imageHolder").append(newGif);
+
+                                    // function to display the rating of gifs
+
+                                    	var gifRating = $("<p>");
+                                    	gifRating.append("Rating: " + response.data[j].rating);
+                                    	
+                                    	var gifPlusRating = $("<div>");
+                                    	gifPlusRating.append(newGif, gifRating);
+                                    	$("#imageHolder").append(gifPlusRating);
 
                                     // Function to animate the retrieved still images
                                 		var static = response.data[j].images.fixed_width_still.url
