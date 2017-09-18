@@ -1,3 +1,7 @@
 body {
 	background-image: url("octagon.jpg");
 }
+
+#jumbotron {
+	background-color: #74107B;
+}
