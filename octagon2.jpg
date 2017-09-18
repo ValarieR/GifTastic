@@ -1,0 +1,117 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>UFC mixed martial arts mma fight extreme battle battles stadium ... - WallpaperPulse</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+  <div id="headerc"><div id="header">
+    <a href="/"><img id="logo" src="/logo.gif" /></a>
+    <span id="mobile-search"></span>
+    <img id="mobile-menu" src="/images/menu-mobile.png" width="38" height="35" alt="Mobile menu icon" />
+    <form method="get" action="/search" id="search">
+      <input type="text" placeholder="Search wallpapers..." id="q" name="q" /><button id="submitsearch" type="submit">Search</button>  
+    </form>
+    <ul id="menu">
+          <li id="signin"><a href="/signin?redirect=http://wallpaperpulse.com/wallpaper/491281">Sign in</a></li>
+      <li id="signup"><a href="/signup">Sign up</a></li>
+        </ul>
+    
+    <br class="clear" />
+  </div></div>
+  <ul id="menu2">
+    <li><a href="/latest">Latest<span> wallpapers</span></a></li>
+    <li><a href="/top">Top<span> wallpapers</span></a></li>
+    <li><a href="/random">Random<span> wallpaper</span></a></li>
+        <br style="clear: both" />
+  </ul>
+    <div id="web">
+<script type="text/javascript">
+$( document ).ready(function() {
+  $('.wpimg').mousedown(function(event) {
+    switch (event.which) {
+      case 3:
+        var id = $(this).attr("data-url");
+        $.post( "/download/"+ id +"", { slug: "", id: id } );
+        break;
+    }
+  });
+});
+
+</script>
+<div id="album">
+  
+    <div style="width: 100%;
+  margin: -15px auto 15px auto;
+  float: left;
+  text-align: center;">
+  </div> 
+    
+  <div id="wpbox">
+        <div class="wallpaper" id="wp491281">
+      <div class="wpbuttons">      
+      </div>
+      <img data-url="491281" src="http://wallpaperpulse.com/img/491281.jpg" class="wpimg" />
+    </div>   
+    
+    <ul id="sharealbum">
+      <li id="sharefb"><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http://wallpaperpulse.com/wallpaper/491281" onclick="return popup('https://www.facebook.com/sharer/sharer.php?u=http://wallpaperpulse.com/wallpaper/491281');" title="Share on Facebook"><span></span>Share on Facebook</a></li>
+      <li id="sharetw"><a rel="nofollow" href="https://twitter.com/home?status=Great wallpaper! http://wallpaperpulse.com/wallpaper/491281" onclick="return popup('https://twitter.com/home?status=Awesome wallpaper! http://wallpaperpulse.com/wallpaper/491281');" title="Share on Twitter"><span></span>Share on Twitter</a></li>
+     <li id="sharept"><a href="/download/491281"><span></span>Download</a></li>
+    </ul>
+  </div>
+  <div id="sidebar">
+		<div id="wpmeta">
+      <h1>UFC Mixed Martial Arts Mma Fight Extreme Battle Battles Stadium ...</h1>
+      <p>Download this <strong>UFC Mixed Martial Arts Mma Fight Extreme Battle Battles Stadium ...</strong> wallpaper for free and set it up as a background for your desktop computer, mobile phone or tablet.</p>
+      </p>
+			<p>Image resolution: 1997x1011</p>
+			<p>Image type: jpg</p>
+      <p>232 views. 21 downloads</p>
+             
+            <p>More: <a href="/ufc-background">UFC Backgrounds</a></p>
+		</div>
+    <div style="text-align: center; margin: 0 auto;">
+    </div>
+    <div id="related" style="margin-top:0">
+        </div>
+  </div>
+</div>
+
+  <div id="footerc"><div id="footer">
+        <ul>
+      <li>WallpaperPulse &copy; 2016 - 2017</li>
+      <li><a href="/privacy" rel="nofollow">Privacy Policy</a></li>
+      <li><a href="/contact" rel="nofollow">Contact</a></li>
+    </ul>
+    <p>WallpaperPulse is a community supported website with the majority of the published wallpapers being uploaded by our user community or collected from a wide range of sources including free image repositories and websites. Although published content is believed to be authorized for sharing and personal use as desktop wallpaper either by the uploader / author or for being Public Domain / Free Culture licensed content, unless otherwise noted in the wallpaper description, all images on this website are copyrighted by their respective authors.</p>
+  </div></div>
+  
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=11178086; 
+var sc_invisible=1; 
+var sc_security="17caa558"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter_xhtml.js'></"+"script>");
+//]]>
+</script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="//c.statcounter.com/11178086/0/17caa558/1/"
+alt="shopify analytics" /></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
+ 
