@@ -14,3 +14,12 @@ body {
 p {
 	color: white;
 }
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  float: left;
+  margin: 5px;
+}
