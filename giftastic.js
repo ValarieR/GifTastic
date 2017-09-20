@@ -3,10 +3,10 @@
 var topics = [
     "Judo",
     "BJJ",
-    "muay thai",
-    "freestyle wrestling",
-    "jiu-jitsu",
-    "boxing"
+    "Muay Thai",
+    "Freestyle Wrestling",
+    "Jiu-jitsu",
+    "Boxing"
 ];
 
 $(document).ready(function() {
