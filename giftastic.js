@@ -61,10 +61,12 @@ $(document).ready(function() {
         for (var j = 0; j < response.data.length; j++) {
 
             var newGif = $("<img>");
-            newGif.addClass("newGifs");
+            newGif.addClass("newGifs img-thumbnail");
             newGif.attr("src", response.data[j].images.fixed_width_still.url);
-            newGif.attr('class', "img-thumbnail");
-            newGif.addClass("static");
+            //newGif.attr('class', "img-thumbnail");
+            newGif.attr("data-state", "still");
+            newGif.attr("data-still", response.data[j].images.fixed_width_still.url);
+            newGif.attr("data-animate", response.data[j].images.fixed_width.url);
             //newGif.addClass("grid-item");
             //$("#imageHolder").append(newGif);
 
@@ -78,21 +80,27 @@ $(document).ready(function() {
             gifPlusRating.addClass("grid-item");
             $("#imageHolder").append(gifPlusRating);
 
-            // Function to animate the retrieved still images
-            var static = response.data[j].images.fixed_width_still.url
-            var animate = response.data[j].images.fixed_width.url
-
-
-            if (newGif === animate) {
-                $(this).attr('src', $(this).attr('static'));
-            } else {
-                $(this).attr('src', $(this).attr('animate'));
-
-            }
-
-
         }
     }
+
+
+    // Function to animate the retrieved still images
+    // var static = response.data[j].images.fixed_width_still.url
+    // var animate = response.data[j].images.fixed_width.url
+
+    $(document).on("click", ".newGifs", function() {
+
+        var state = $(this).attr("data-state");
+
+        if (state === "still") {
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+        } else {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+        }
+    });
+
 
     $('.grid').masonry({
         itemSelector: '.grid-item',
@@ -107,5 +115,26 @@ $(document).ready(function() {
         console.log("click");
         getGifs($(this).attr('value'));
     });
+
+    $("#searchBtn").on('click', function() {
+        //If search bar is empty
+        event.preventDefault();
+
+        var seachWord = $("#searchBtn").val();
+        console.log(searchWord);
+
+        var newBtnSearch = $("<button>");
+
+        $("#newButtonDiv").append(newBtnSearch);
+        newBtnSearch.attr("type", "button");
+        newBtnSearch.attr('value', seachWord);
+        newBtnSearch.addClass("btn btn-default");
+
+        //topics.push(searchWord).data();
+
+
+    });
+
+
     //closing of doc ready
 });
