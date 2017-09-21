@@ -120,17 +120,19 @@ $(document).ready(function() {
         //If search bar is empty
         event.preventDefault();
 
-        var seachWord = $("#searchBtn").val();
+        var searchWord = $(".form-control").val();
         console.log(searchWord);
 
         var newBtnSearch = $("<button>");
 
         $("#newButtonDiv").append(newBtnSearch);
         newBtnSearch.attr("type", "button");
-        newBtnSearch.attr('value', seachWord);
+        newBtnSearch.attr('value', searchWord);
         newBtnSearch.addClass("btn btn-default");
 
-        //topics.push(searchWord).data();
+        topics.push(searchWord);
+        $("#newButtonDiv").empty();
+        displayButtons();
 
 
     });
