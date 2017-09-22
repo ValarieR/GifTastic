@@ -115,6 +115,7 @@ $(document).ready(function() {
         console.log("click");
         getGifs($(this).attr('value'));
         addImages();
+        console.log($(this).attr('value'));
     });
 
     $("#searchBtn").on('click', function() {
