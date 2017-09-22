@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 
 
-    $(document).on('click',".topicBtn" function() {
+    $(document).on('click', ".topicBtn", function() {
 
         console.log("click");
         getGifs($(this).attr('value'));
