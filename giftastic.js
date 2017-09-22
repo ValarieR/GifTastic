@@ -114,7 +114,7 @@ $(document).ready(function() {
 
         console.log("click");
         getGifs($(this).attr('value'));
-        addImages();
+        //addImages();
         console.log($(this).attr('value'));
     });
 
@@ -135,8 +135,8 @@ $(document).ready(function() {
         topics.push(searchWord);
         $("#newButtonDiv").empty();
         displayButtons();
-        getGifs();
-        addImages();
+        getGifs(searchWord);
+        //addImages();
 
 
     });
