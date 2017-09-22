@@ -18,7 +18,7 @@ $(document).ready(function() {
         for (var i = 0; i < topics.length; i++) {
 
             var newButton = $("<button>");
-            newButton.addClass("btn btn-default");
+            newButton.addClass("btn btn-default topicBtn");
             newButton.attr("type", "button");
             newButton.append(topics[i]);
             newButton.attr("value", topics[i]);
@@ -61,7 +61,7 @@ $(document).ready(function() {
         for (var j = 0; j < response.data.length; j++) {
 
             var newGif = $("<img>");
-            newGif.addClass("newGifs img-thumbnail");
+            newGif.addClass("newGifs img-thumbnail grid-item");
             newGif.attr("src", response.data[j].images.fixed_width_still.url);
             //newGif.attr('class', "img-thumbnail");
             newGif.attr("data-state", "still");
@@ -110,10 +110,11 @@ $(document).ready(function() {
 
 
 
-    $(".btn-default").on('click', function() {
+    $(".topicBtn").on('click', function() {
 
         console.log("click");
         getGifs($(this).attr('value'));
+        addImages();
     });
 
     $("#searchBtn").on('click', function() {
@@ -133,6 +134,8 @@ $(document).ready(function() {
         topics.push(searchWord);
         $("#newButtonDiv").empty();
         displayButtons();
+        getGifs();
+        addImages();
 
 
     });
