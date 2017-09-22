@@ -125,12 +125,12 @@ $(document).ready(function() {
         var searchWord = $(".form-control").val();
         console.log(searchWord);
 
-        var newBtnSearch = $("<button>");
+        // var newBtnSearch = $("<button>");
 
-        $("#newButtonDiv").append(newBtnSearch);
-        newBtnSearch.attr("type", "button");
-        newBtnSearch.attr('value', searchWord);
-        newBtnSearch.addClass("btn btn-default");
+        // $("#newButtonDiv").append(newBtnSearch);
+        // newBtnSearch.attr("type", "button");
+        // newBtnSearch.attr('value', searchWord);
+        // newBtnSearch.addClass("btn btn-default");
 
         topics.push(searchWord);
         $("#newButtonDiv").empty();
