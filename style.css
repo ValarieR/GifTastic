@@ -11,8 +11,15 @@ body {
 	font-family: 'Catamaran', sans-serif;
 }
 
-p {
+p,
+h5 {
 	color: white;
+	font-size: 15px;
+}
+
+h3 {
+	color: white;
+	font-size: 24px;
 }
 
 .grid {

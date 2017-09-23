@@ -4,7 +4,6 @@ var topics = [
     "Judo",
     "BJJ",
     "Muay Thai",
-    "Freestyle Wrestling",
     "Jiu-jitsu",
     "Boxing"
 ];
