@@ -1,5 +1,7 @@
 body {
 	background-image: url("octagon.jpg");
+	display: flex;
+	flex-direction: column;
 }
 
 #jumbotron {
