@@ -23,10 +23,13 @@ h3 {
 }
 
 .grid {
-  margin: 0 auto;
+    	margin: 0 auto;
+	display: grid;
 }
 
 .grid-item {
-  float: left;
-  margin: 5px;
+    	margin: 5px;
+    	text-align: center;
+    	display: inline-block;
+    	list-style-type: none;
 }
