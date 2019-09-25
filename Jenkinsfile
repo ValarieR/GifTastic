@@ -1,8 +1,4 @@
 pipeline {
-    agent any
-
-    checkout scm
-
     stages {
         stage('Debug') {
             steps {
