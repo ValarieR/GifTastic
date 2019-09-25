@@ -1,13 +1,25 @@
-node() {
-    try {
-        checkout scm
-    stage('Build') {
-        sh 'echo "Hello World"'
-        sh '''
-            echo "Multiline shell steps works too"
-            ls -lah
-        '''
-        sh ./echoingmore.sh
+pipeline {
+    agent any
+
+    checkout scm
+
+    stages {
+        stage('Debug') {
+            steps {
+                sh './echoingmore.sh'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'npm test'
+            }
         }
     }
 }
