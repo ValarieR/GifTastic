@@ -1,6 +1,11 @@
-checkout scm
+node {
     stage('Build') {
-        docker.image('node:6.3').inside {
-            sh 'npm --version'
-        }
+        echo 'Building....'
     }
+    stage('Test') {
+        echo 'Testing....'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
+    }
+}
