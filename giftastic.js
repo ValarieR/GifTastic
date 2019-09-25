@@ -1,6 +1,6 @@
 // Starting array
 
-var topics = ["Judo", "BJJ", "Muay Thai", "Jiu-jitsu", "Boxing"];
+var topics = ["Judo", "BJJ", "Muay Thai", "Jiu-jitsu", "Boxing", "Kickboxing"];
 
 $(document).ready(function() {
   // Functions
