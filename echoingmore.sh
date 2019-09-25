@@ -1,1 +1,1 @@
-echo "yup, this was triggered as well"
+echo "yup, this was triggered - could be test scripts in here"

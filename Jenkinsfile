@@ -1,21 +1,8 @@
-pipeline {
-    stages {
-        stage('Debug') {
-            steps {
-                sh './echoingmore.sh'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
+node('docker') {
+    checkout scm
+    stage('Build') {
+        docker.image('node:6.3').inside {
+            sh 'npm --version'
         }
     }
 }
