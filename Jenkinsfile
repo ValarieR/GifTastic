@@ -1,10 +1,9 @@
-pipeline {
-    agent { docker { image 'node:6.3' } }
-    stages {
-        stage('build') {
-            steps {
-                echo "You did it!"
-            }
+/* Requires the Docker Pipeline plugin */
+node('docker') {
+    checkout scm
+    stage('Build') {
+        docker.image('node:6.3').inside {
+            echo 'You did it!'
         }
     }
 }
