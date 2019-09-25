@@ -8,8 +8,4 @@ node {
     stage('Deploy') {
         echo 'Deploying....'
     }
-    stage('Custom Stuff') {
-        sh './echoingmore.sh'
-        echo 'alllll the echoing'
-    }
 }
