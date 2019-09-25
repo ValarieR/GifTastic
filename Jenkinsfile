@@ -10,5 +10,6 @@ node {
     }
     stage('Custom Stuff') {
         sh './echoingmore.sh'
+        echo 'alllll the echoing'
     }
 }
